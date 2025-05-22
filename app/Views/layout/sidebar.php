@@ -49,6 +49,12 @@
                                             <p>Human Resources</p>
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiNTMxZTYwOTEtODY4OC00NmM5LTg0Y2EtNjFjMGI4MGUzMDM3IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Trouble Ticket</p>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>

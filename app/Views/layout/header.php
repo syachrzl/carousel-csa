@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="<?= base_url('adminlte') ?>/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="<?= base_url('adminlte') ?>/plugins/summernote/summernote-bs4.min.css">
+
+    <link rel="icon" type="image/png" href="<?= base_url('uploads/csaicon.png'); ?>" style="width: 32px; height: 32px;">
+
     <script data-cfasync="false" nonce="da986321-d684-4b3e-944d-8d3f668bc8d4">
         try {
             (function(w, d) {
