@@ -33,7 +33,6 @@
         "https://app.powerbi.com/view?r=eyJrIjoiYTZiNGU2MzEtMjc4ZC00ZGM2LTlkZTYtOGJjNmUwOTg4YmY0IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D",
         "https://app.powerbi.com/view?r=eyJrIjoiOWYwOTk0ZGQtMGE2MC00MzAyLTg3ZGEtMDZmZjJmNzBjZDlhIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D",
         "https://app.powerbi.com/view?r=eyJrIjoiN2RiMjIxYTMtZDIwOS00NjlhLWExNzktZjNkZDVlNjIxMDBhIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D",
-        "https://lookerstudio.google.com/u/0/reporting/48addb87-3e55-4db4-a55c-8a04161fa4bd/page/p_vzuj9jdasd"
     ];
 
     let idleTime = 0;
