@@ -34,7 +34,13 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiN2VjZGU4MjgtZjQ1MC00ZjRlLWIwNDItYTc0NTBmYjExYzljIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>PMO Service</p>
+                                            <p> PMO Service CME</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiZDAxYThmMmItNGQxYy00MDcxLWFjN2EtZTQyMWU3ZjA1NmQ3IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>PMO Service FO</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
