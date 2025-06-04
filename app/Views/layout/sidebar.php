@@ -44,7 +44,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiN2RiMjIxYTMtZDIwOS00NjlhLWExNzktZjNkZDVlNjIxMDBhIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiMmM1MDdmMTAtYzJjNy00MGIzLTk0NzQtZjM4MzgxZDliM2YwIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Human Resources</p>
                                         </a>
