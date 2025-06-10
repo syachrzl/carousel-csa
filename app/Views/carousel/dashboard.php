@@ -73,7 +73,4 @@
         });
     });
 </script>
-
-
-
 <?php $this->endSection(); ?>
