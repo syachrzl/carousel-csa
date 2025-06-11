@@ -10,7 +10,8 @@
   <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
-
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- jQuery -->
   <script src="<?= base_url('adminlte') ?>/plugins/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->

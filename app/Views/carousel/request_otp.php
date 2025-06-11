@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSA Login</title>
+    <title>CSA Request OTP</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -136,33 +136,23 @@
                     </div>
                 <?php endif; ?>
 
-                <form action="<?= base_url('/carousel/login') ?>" method="post" autocomplete="off">
+                <form id="otpForm" action="<?= base_url('/carousel/otp/send') ?>" method="post" autocomplete="off">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="username" value="<?= old('username') ?>" required>
+                        <input type="email" class="form-control" name="email" value="<?= old('email') ?>" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" name="password" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
-                        <!-- /.col -->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Request OTP</button>
                         </div>
-                        <!-- /.col -->
                     </div>
 
                     <p class="m-3 text-center">
-                        <a href="<?= base_url('/carousel/otp') ?>">Login Using OTP</a>
+                        <a href="<?= base_url('/carousel/') ?>">Login Using Account</a>
                     </p>
                 </form>
                 <!-- /.social-auth-links -->
@@ -173,6 +163,23 @@
     </div>
     <!-- /.login-box -->
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            // Tampilkan SweetAlert loading saat submit
+            Swal.fire({
+                title: 'Mohon tunggu...',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                didOpen: () => {
+                    Swal.showLoading()
+                }
+            });
+        });
+    </script>
     <!-- jQuery -->
     <script src="<?= base_url('adminlte') ?>/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->

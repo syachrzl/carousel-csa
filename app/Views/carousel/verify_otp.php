@@ -136,34 +136,22 @@
                     </div>
                 <?php endif; ?>
 
-                <form action="<?= base_url('/carousel/login') ?>" method="post" autocomplete="off">
+                <form action="<?= base_url('/carousel/otp/verify') ?>" method="post" autocomplete="off">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="username" value="<?= old('username') ?>" required>
+                        <input type="text" class="form-control" id="otp_code" name="otp_code" value="<?= old('otp_code') ?>" required maxlength="6">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" name="password" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
                         <!-- /.col -->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block">Verify OTP</button>
                         </div>
                         <!-- /.col -->
                     </div>
-
-                    <p class="m-3 text-center">
-                        <a href="<?= base_url('/carousel/otp') ?>">Login Using OTP</a>
-                    </p>
                 </form>
                 <!-- /.social-auth-links -->
             </div>
