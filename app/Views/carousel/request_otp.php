@@ -137,14 +137,24 @@
                 <?php endif; ?>
 
                 <form id="otpForm" action="<?= base_url('/carousel/otp/send') ?>" method="post" autocomplete="off">
+                    <!-- Input tersembunyi untuk menyimpan email asli -->
+                    <input type="hidden" name="email" value="achmad.fauzi@csa-tower.co.id">
+
+                    <!-- Input yang ditampilkan (hanya tampilan) -->
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" name="email" value="<?= old('email') ?>" required>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="maskedEmail"
+                            value="a**********i@c***********d"
+                            readonly>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Request OTP</button>
@@ -152,7 +162,7 @@
                     </div>
 
                     <p class="m-3 text-center">
-                        <a href="<?= base_url('/carousel/') ?>">Login Using Account</a>
+                        <a href="https://internal.csa-tower.co.id">Please Visit Internal CSA</a>
                     </p>
                 </form>
                 <!-- /.social-auth-links -->
@@ -180,6 +190,37 @@
             });
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simpan email asli di JavaScript memory (tidak terlihat di HTML)
+            const originalEmail = 'achmad.fauzi@csa-tower.co.id';
+            const emailDisplay = document.getElementById('maskedEmail');
+
+            // Fungsi masking
+            const maskEmail = (email) => {
+                const [name, domain] = email.split('@');
+                const maskedName = name[0] + '*'.repeat(Math.max(0, name.length - 2)) + (name.length > 1 ? name.slice(-1) : '');
+                const maskedDomain = domain[0] + '*'.repeat(Math.max(0, domain.indexOf('.') - 1)) + domain.substring(domain.indexOf('.'));
+                return maskedName + '@' + maskedDomain;
+            };
+
+            emailDisplay.value = maskEmail(originalEmail);
+
+            // Sebelum form submit, pastikan email asli dikirim
+            document.getElementById('otpForm').addEventListener('submit', function(e) {
+                // Tambahkan hidden input jika belum ada
+                if (!document.querySelector('input[name="email"][type="hidden"]')) {
+                    const hiddenInput = document.createElement('input');
+                    hiddenInput.type = 'hidden';
+                    hiddenInput.name = 'email';
+                    hiddenInput.value = originalEmail;
+                    this.appendChild(hiddenInput);
+                }
+            });
+        });
+    </script>
+
     <!-- jQuery -->
     <script src="<?= base_url('adminlte') ?>/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
