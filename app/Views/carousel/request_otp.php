@@ -146,11 +146,14 @@
                             type="text"
                             class="form-control"
                             id="maskedEmail"
-                            value="a**********i@c***********d"
+                            value="Loading emails..."
                             readonly>
                         <div class="input-group-append">
-                            <div class="input-group-text">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="emailDropdownBtn" data-toggle="dropdown">
                                 <span class="fas fa-envelope"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" id="emailDropdownMenu">
+                                <!-- Options akan diisi oleh JavaScript -->
                             </div>
                         </div>
                     </div>
@@ -162,7 +165,8 @@
                     </div>
 
                     <p class="m-3 text-center">
-                        <a href="https://internal.csa-tower.co.id">Please Visit Internal CSA</a>
+                        For CSA employees Dashboard access<br>
+                        Please visit<a href="https://internal.csa-tower.co.id"> Internal CSA</a>
                     </p>
                 </form>
                 <!-- /.social-auth-links -->
@@ -190,12 +194,17 @@
             });
         });
     </script>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Simpan email asli di JavaScript memory (tidak terlihat di HTML)
-            const originalEmail = 'achmad.fauzi@csa-tower.co.id';
+            const emailList = [
+                'robert@csa-tower.co.id',
+                'putri.ramadhani@csa-tower.co.id',
+                'achmad.fauzi@csa-tower.co.id'
+            ];
+
             const emailDisplay = document.getElementById('maskedEmail');
+            const dropdownMenu = document.getElementById('emailDropdownMenu');
+            let selectedEmail = emailList[0];
 
             // Fungsi masking
             const maskEmail = (email) => {
@@ -205,16 +214,30 @@
                 return maskedName + '@' + maskedDomain;
             };
 
-            emailDisplay.value = maskEmail(originalEmail);
+            // Isi dropdown menu
+            emailList.forEach(email => {
+                const dropdownItem = document.createElement('a');
+                dropdownItem.className = 'dropdown-item';
+                dropdownItem.href = '#';
+                dropdownItem.textContent = maskEmail(email);
+                dropdownItem.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    selectedEmail = email;
+                    emailDisplay.value = maskEmail(email);
+                });
+                dropdownMenu.appendChild(dropdownItem);
+            });
 
-            // Sebelum form submit, pastikan email asli dikirim
+            // Tampilkan email pertama
+            emailDisplay.value = maskEmail(selectedEmail);
+
+            // Handle form submit
             document.getElementById('otpForm').addEventListener('submit', function(e) {
-                // Tambahkan hidden input jika belum ada
                 if (!document.querySelector('input[name="email"][type="hidden"]')) {
                     const hiddenInput = document.createElement('input');
                     hiddenInput.type = 'hidden';
                     hiddenInput.name = 'email';
-                    hiddenInput.value = originalEmail;
+                    hiddenInput.value = selectedEmail;
                     this.appendChild(hiddenInput);
                 }
             });
