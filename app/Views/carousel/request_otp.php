@@ -165,8 +165,8 @@
                     </div>
 
                     <p class="m-3 text-center">
-                        For CSA employees Dashboard access<br>
-                        Please visit<a href="https://internal.csa-tower.co.id"> Internal CSA</a>
+                        For CSA employees , you can access Dashboard Report from<br>
+                        <a href="https://internal.csa-tower.co.id"> Internal CSA</a>
                     </p>
                 </form>
                 <!-- /.social-auth-links -->
