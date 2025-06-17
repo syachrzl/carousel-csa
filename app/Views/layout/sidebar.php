@@ -28,7 +28,7 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiYTZiNGU2MzEtMjc4ZC00ZGM2LTlkZTYtOGJjNmUwOTg4YmY0IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Project Rollout</p>
+                                            <p>Project SACME</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -65,6 +65,12 @@
                                         <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiNTUyM2I4NzYtMTcyOS00NjUyLWE4YzYtMWVjYjc4M2IwZWQ4IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class=" far fa-circle nav-icon"></i>
                                             <p>Finance</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiZjQ4ZTQ1YmMtOTJhNS00MmYwLThlNjAtOTQ0OTEwZTc5YmUzIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                            <i class=" far fa-circle nav-icon"></i>
+                                            <p>Project FO</p>
                                         </a>
                                     </li>
                                 </ul>
