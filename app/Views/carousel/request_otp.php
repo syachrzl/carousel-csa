@@ -138,7 +138,7 @@
 
                 <form id="otpForm" action="<?= base_url('/carousel/otp/send') ?>" method="post" autocomplete="off">
                     <!-- Input tersembunyi untuk menyimpan email asli -->
-                    <input type="hidden" name="email" value="achmad.fauzi@csa-tower.co.id">
+                    <input type="hidden" name="email" id="hiddenEmail">
 
                     <!-- Input yang ditampilkan (hanya tampilan) -->
                     <div class="input-group mb-3">
@@ -204,6 +204,7 @@
 
             const emailDisplay = document.getElementById('maskedEmail');
             const dropdownMenu = document.getElementById('emailDropdownMenu');
+            const hiddenInput = document.getElementById('hiddenEmail'); // Dapatkan input tersembunyi
             let selectedEmail = emailList[0];
 
             // Fungsi masking
@@ -224,22 +225,18 @@
                     e.preventDefault();
                     selectedEmail = email;
                     emailDisplay.value = maskEmail(email);
+                    hiddenInput.value = email; // Update nilai input tersembunyi
                 });
                 dropdownMenu.appendChild(dropdownItem);
             });
 
-            // Tampilkan email pertama
+            // Inisialisasi nilai awal
             emailDisplay.value = maskEmail(selectedEmail);
+            hiddenInput.value = selectedEmail; // Set nilai awal input tersembunyi
 
-            // Handle form submit
+            // Hapus logika tambahan di event submit
             document.getElementById('otpForm').addEventListener('submit', function(e) {
-                if (!document.querySelector('input[name="email"][type="hidden"]')) {
-                    const hiddenInput = document.createElement('input');
-                    hiddenInput.type = 'hidden';
-                    hiddenInput.name = 'email';
-                    hiddenInput.value = selectedEmail;
-                    this.appendChild(hiddenInput);
-                }
+                // Tidak perlu membuat input baru lagi
             });
         });
     </script>

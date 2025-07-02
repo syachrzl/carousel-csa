@@ -25,7 +25,7 @@ class CarouselController extends BaseController
             return view('carousel/dashboard');
         }
 
-        return view('carousel/login');
+        return view('carousel/request_otp');
     }
 
     public function login()
@@ -75,7 +75,7 @@ class CarouselController extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/carousel/login');
+        return redirect()->to('/carousel/request_otp');
     }
 
     // OTP Login
