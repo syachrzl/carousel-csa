@@ -28,7 +28,7 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiMmQyZDFmMWQtZjVmOC00NDUyLThjNzctOWNkOGQ4MWM5MjhiIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Coorporate Strategy Map</p>
+                                    <p>Corporate Strategy Map</p>
                                 </a>
                             </li>
                             <li class="nav-item">
