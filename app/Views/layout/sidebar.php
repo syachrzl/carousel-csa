@@ -20,7 +20,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiMDYyYWVkMDYtMDBhYi00MWE3LWFhNmQtNTM3Yjc4NDI0NmI4IiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiOTM0ZDI1MmItMTMwYi00YTEyLTg0M2ItNmUwOGZlYzRlNDUxIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Commercial</p>
                                         </a>
