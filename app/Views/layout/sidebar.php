@@ -74,7 +74,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiMjFjM2ZiYzAtZWNiZC00NmI3LWI0ZjEtZmVkMjNiMWMyNmQzIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
+                                        <a href="#" class="nav-link report-btn" data-src="https://app.powerbi.com/view?r=eyJrIjoiN2VjZGU4MjgtZjQ1MC00ZjRlLWIwNDItYTc0NTBmYjExYzljIiwidCI6IjVjODQ2NDU0LTI4MjMtNGNhZi04ZThhLWNmZjY5NjUzYjMyNiIsImMiOjEwfQ%3D%3D">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Project CME</p>
                                         </a>
